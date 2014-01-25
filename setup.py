@@ -36,6 +36,7 @@ setup(name="bookmatch",
       long_description=readme,
       install_requires=requires,
       packages=find_packages(),
+      test_suite="bookmatch",
       extras_require={
           "testing": tests_require,
           "dev": tests_require + ["waitress", "pyramid_debugtoolbar"],
