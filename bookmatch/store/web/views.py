@@ -17,6 +17,17 @@ class IndexView(object):
         return dict()
 
 
+@view_defaults(context="bookmatch.store.interfaces.IBook", route_name="book")
+class BookView(object):
+    def __init__(self, context, request):
+        self.context = context
+        self.request = request
+
+    @view_config(renderer="book.mako")
+    def __call__(self):
+        return dict(book=self.context)
+
+
 class TopicView(object):
     """ 特集画面
     """

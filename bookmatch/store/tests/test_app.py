@@ -19,4 +19,10 @@ class TestStore(unittest.TestCase):
         app = webtest.TestApp(target)
 
         res = app.get("/")
-        compare( "hello", res.text)
+        compare("hello", res.text)
+
+    def test_book(self):
+        target = self._makeOne({}, **self.settings)
+        app = webtest.TestApp(target)
+
+        res = app.get("/books/abc")

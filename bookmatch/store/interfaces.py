@@ -24,6 +24,11 @@ class IAuthor(Interface):
 class IBook(Interface):
     """ 本
     """
+    isbn = Attribute(u"ISO 2108 code (ISBN)")
+    title = Attribute(u"title of book")
+    authors = Attribute(u"author list of book")
+    published = Attribute(u"published date of book")
+    price = Attribute(u"standard price")
 
 
 class INewItem(Interface):
