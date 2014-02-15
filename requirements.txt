@@ -1,3 +1,5 @@
+pytest
+pytest-cov
+sphinx
 -e src/bookmatch.web.store
--e .[dev]
 
