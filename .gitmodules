@@ -1,0 +1,3 @@
+[submodule "src/bookmatch.web.store"]
+	path = src/bookmatch.web.store
+	url = git@github.com:bookmatch/bookmatch.web.store.git
