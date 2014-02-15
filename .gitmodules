@@ -4,3 +4,6 @@
 [submodule "src/bookmatch.books"]
 	path = src/bookmatch.books
 	url = git@github.com:bookmatch/bookmatch.books.git
+[submodule "src/bookmatch.payments"]
+	path = src/bookmatch.payments
+	url = git@github.com:bookmatch/bookmatch.payments.git
