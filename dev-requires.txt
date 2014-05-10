@@ -1,5 +1,10 @@
 -f wheelhouse
 --no-index
 -r requirements.txt
+WebTest==2.0.15
+beautifulsoup4==4.3.2
+six==1.6.1
+testfixtures==3.0.2
 tox==1.7.1
 virtualenv==1.11.5
+waitress==0.8.8
