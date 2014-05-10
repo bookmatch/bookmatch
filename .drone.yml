@@ -2,6 +2,7 @@ image: bradrydzewski/python:3.3
 script:
  - pip install tox -f wheelhouse
  - tox
+ - echo {{notify_url}}
 notify:
  webhook:
   urls:
