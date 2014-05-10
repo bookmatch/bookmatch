@@ -7,4 +7,5 @@ requires = [
 
 setup(name="bookmatch",
       install_requires=requires,
+      packages=['bookmatch'],
 )
