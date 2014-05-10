@@ -5,7 +5,7 @@ script:
 notify:
  webhook:
   urls:
-   - {{ notify_url }}
+   - {{notify_url}}
   on_started: true
   on_success: true
   on_failure: true
