@@ -2,3 +2,12 @@ image: bradrydzewski/python:3.3
 script:
  - pip install tox -f wheelhouse
  - tox
+notify:
+ slack:
+  team: {{ slack_team }}
+  channel: {{ slack_channel }}
+  username: {{ slack_username }}
+  token: {{ slack_token }}
+  on_started: true
+  on_success: true
+  on_failure: true
