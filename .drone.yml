@@ -3,11 +3,9 @@ script:
  - pip install tox -f wheelhouse
  - tox
 notify:
- slack:
-  team: {{ slack_team }}
-  channel: {{ slack_channel }}
-  username: {{ slack_username }}
-  token: {{ slack_token }}
+ webhook:
+  urls:
+   - {{ notify_url }}
   on_started: true
   on_success: true
   on_failure: true
